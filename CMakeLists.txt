@@ -33,8 +33,8 @@ file(GLOB headers ${PROJECT_SOURCE_DIR}/include/*.*)
 #----------------------------------------------------------------------------
 # Add the executable, and link it to the Geant4 libraries
 #
-add_executable(mytestproject ibd.cpp ${sources} ${headers})
-target_link_libraries(mytestproject ${Geant4_LIBRARIES})
+add_executable(ibd ibd.cpp ${sources} ${headers})
+target_link_libraries(ibd ${Geant4_LIBRARIES})
 
 #----------------------------------------------------------------------------
 # Copy all scripts to the build directory, i.e. the directory in which we

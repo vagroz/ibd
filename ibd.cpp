@@ -26,7 +26,7 @@ int main(int argc,char** argv)
     CLHEP::HepRandom::setTheSeed(time(NULL));
 
     G4RunManager* runManager = new G4RunManager;
-    runManager->SetUserInitialization(new ExG4DetectorConstruction01);
+    runManager->SetUserInitialization(new DetectorConstruction);
     runManager->SetUserInitialization(new FTFP_BERT);
     runManager->SetUserInitialization(new ActionInit);
 
